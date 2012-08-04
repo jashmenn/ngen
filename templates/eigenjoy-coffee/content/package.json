@@ -1,0 +1,23 @@
+{
+  "name": "{{project}}",
+  "version": "0.0.1",
+  "description": "{{description}}",
+  "keywords": [],
+  "author": "{{name}} <{{email}}>",
+  "dependencies": {
+    "async": "*",
+    "coffee-script": "*",
+    "underscore": "*",
+    "underscore.string": "*",
+    "winston": "*",
+    "forever": "*",
+    "supervisor": "*",
+    "debug": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "replay": "*",
+    "should": "*"
+  },
+  "main": "./index"
+}
