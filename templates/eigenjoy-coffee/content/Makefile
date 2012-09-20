@@ -18,7 +18,8 @@ js: generate-js
 	@true
 
 generate-js:
-	@find src -name '*.coffee' | xargs coffee -c -o lib
+	@find src -name '*.coffee' | xargs coffee -c -o lib/src
+	@find test -name '*.coffee' | xargs coffee -c -o lib/test
 
 # calculate lines of code
 test-loc:	
@@ -46,3 +47,7 @@ run:
 	coffee index.coffee # CHANGEME
 
 .PHONY: test
+
+develop:
+	npm install
+	npm link
